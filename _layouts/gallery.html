@@ -8,13 +8,13 @@ layout: default
     <div class="post">
       <div class="images">
       {% for img in post.images %}
-        <div><img src="{{ site.url }}/img/art/{{ img }}"></div>
+        <div><img src="{{ site.github.url }}/img/art/{{ img }}"></div>
       {% endfor %}
       </div>
       <div class="description">
         {{ post.content }}
       </div>
-    </div>    
+    </div>
   </div>
   {% endfor %}
 </div>

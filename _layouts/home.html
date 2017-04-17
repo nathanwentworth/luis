@@ -9,7 +9,7 @@ layout: default
       <div class="upper">
         <div class="featured">
         {% for img in post.featuredimages %}
-          <img src="{{ site.url }}/img/art/{{ img }}">
+          <img src="{{ site.github.url }}/img/art/{{ img }}">
         {% endfor %}
         {% for vid in post.featuredvideos %}
           <div class="video-container">
@@ -23,7 +23,7 @@ layout: default
       </div>
       <div class="images">
       {% for img in post.images %}
-        <div><img src="{{ site.url }}/img/art/{{ img }}"></div>
+        <div><img src="{{ site.github.url }}/img/art/{{ img }}"></div>
       {% endfor %}
       </div>
     </div>
