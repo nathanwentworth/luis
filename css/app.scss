@@ -5,6 +5,7 @@ body, html {
   font-family: 'Open Sans', sans-serif;
   color: #222;
   margin: 0;
+  margin-bottom: 32px;
 }
 
 p, img {
@@ -176,6 +177,36 @@ header nav {
   height: auto;
   display: block;
   max-height: calc(100% - 16px);
+}
+
+@media (max-width: 700px) {
+  .home .upper {
+    flex-direction: column;
+  }
+  .home .featured {
+    width: 100%;
+  }
+
+  .home .post .description {
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about .left {
+    width: 100%;
+  }
+
+  .about .right {
+    width: 100%;
+    padding-left: 0;
+  }
+
+
 }
 
 
