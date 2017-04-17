@@ -1,0 +1,181 @@
+---
+---
+
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  margin: 0;
+}
+
+p, img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 140%;
+}
+
+a:link, a:visited { color: #222; }
+a:hover, a:active { color: #000; }
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 32px auto;
+  text-align: center;
+}
+
+header div {
+  width: 90%;
+  max-width: 960px;
+  display: block;
+  margin: auto;
+}
+
+header h1 a {
+  text-decoration: none;
+}
+
+header nav {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #eee;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 -2px #ccc inset;
+}
+
+.home .upper {
+  display: flex;
+}
+
+.home .featured {
+  width: 70%;
+}
+
+.home .post .description {
+  width: 30%;
+  padding-left: 2em;
+  margin: 0;
+}
+
+.home .images {
+  margin-top: 32px;
+}
+
+.gallery {
+  width: 100%;
+}
+
+.post-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 48px 0;
+}
+
+.post {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  /*margin: 48px auto;*/
+}
+
+.post .images {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.post .images div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 4px;
+}
+
+.post .images img {
+  cursor: zoom-in;
+}
+
+.gallery .post .description {
+  width: 90%;
+  max-width: 560px;
+  margin: auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  max-width: 960px;
+  width: 90%;
+  margin: auto;
+}
+
+.about .left {
+  width: 30%;
+}
+
+.about .right {
+  width: 70%;
+  padding-left: 32px;
+}
+
+.light {
+  background: #fff;
+  color: #222;
+}
+
+.dark {
+  background: #333;
+  color: #fff;
+}
+
+.dark a:link, .dark a:visited { color: #fff; }
+.dark a:hover, .dark a:active { color: #eee; }
+
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  cursor: zoom-out;
+  background: rgba(.9, .9, .9, .75);
+}
+
+.lightbox img {
+  max-width: calc(100% - 16px);
+  margin: auto;
+  height: auto;
+  display: block;
+  max-height: calc(100% - 16px);
+}
+
+
